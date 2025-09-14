@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Editor de Imagens</title>
+  <style>
+    body { font-family: Arial, sans-serif; text-align: center; background: #f5f5f5; }
+    canvas { border: 2px solid #333; margin-top: 10px; }
+    .controls { margin: 15px; }
+    button, input[type=range] { margin: 5px; padding: 8px; }
+  </style>
+</head>
+<body>
+  <h1>🖼️ Editor de Imagens</h1>
+
+  <input type="file" id="upload" accept="image/*"><br>
+  <canvas id="canvas"></canvas>
+
+  <div class="controls">
+    <label>Brilho: <input type="range" id="brightness" min="0" max="200" value="100"></label>
+    <label>Contraste: <input type="range" id="contrast" min="0" max="200" value="100"></label>
+    <label>Saturação: <input type="range" id="saturate" min="0" max="200" value="100"></label>
+    <label>Blur: <input type="range" id="blur" min="0" max="10" value="0"></label>
+    <br>
+    <button id="download">Baixar Imagem</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
